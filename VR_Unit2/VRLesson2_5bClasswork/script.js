@@ -19,7 +19,13 @@ window.addEventListener("DOMContentLoaded",function() {
   }
 
   //Challenge 1: Create an array to store 20 clouds in random positions
-  cloud = new Cloud(-5,10,-1);
+  
+  for (let i = 0; i <20; i++) {
+    let x = rnd(-50,50);
+    let y = rnd(15,25);
+    let z = rnd(-50,50);
+    let cloud = new Cloud (x,y,z);
+  }
 
   //Challenge 3: Create an array to store 100 snowflakes in random positions
 
